@@ -42,7 +42,6 @@ groups = df.groupby('网格名称')
 for name, group_df in groups:
     group_df = group_df.copy()
 
-    # 提取电量和负荷两类数据（注意类型字段需要提前清洗）
     group_df['项目'] = group_df['项目'].apply(normalize)
     filtered = group_df[group_df['项目'].isin(['电量', '负荷'])]
 
