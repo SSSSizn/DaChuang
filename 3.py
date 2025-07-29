@@ -1,7 +1,7 @@
 import pandas as pd
 from docx import Document
 from docx.oxml.ns import qn
-from docx.shared import Pt, RGBColor
+from docx.shared import Pt
 import os
 import re
 
