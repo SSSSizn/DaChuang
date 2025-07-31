@@ -164,7 +164,7 @@ os.makedirs(output_dir, exist_ok=True)
 
 for grid_name, year_rows in grid_year_data.items():
     doc = Document()
-    doc.add_heading(f"{grid_name} 各年份指标统计", level=1)
+    doc.add_heading(f"表16  {grid_name}网格属性提升表", level=1)
     table = doc.add_table(rows=len(left_rows)+1, cols=3+len(years))
     table.style = "Table Grid"
 

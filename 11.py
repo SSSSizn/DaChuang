@@ -39,7 +39,7 @@ for grid_name, group_df in df.groupby("网格名称"):
     doc.styles['Normal'].font.name = '宋体'
     doc.styles['Normal']._element.rPr.rFonts.set(qn('w:eastAsia'), '宋体')
 
-    doc.add_heading(grid_name, level=1)
+    doc.add_heading(f"表11  {grid_name}新型储能装机容量预测表  单位：MW", level=1)
 
     # 创建表格，2行表头 + 行数=电压等级*类型组合数，列数=3 + 年份数
     table = doc.add_table(rows=1 + len(fixed_voltages)*len(fixed_types), cols=2 + len(years))

@@ -47,7 +47,7 @@ for grid_name, group_df in df_selected.groupby('网格名称'):
     style._element.rPr.rFonts.set(qn('w:eastAsia'), '宋体')
 
     # 添加标题
-    doc.add_heading(grid_name, level=1)
+    doc.add_heading(f"表7  {grid_name}全社会用电负荷预测表    单位：MW ，%", level=1)
 
     # 新建表格，1行表头 + 1行数据，列数与选列数对应
     table = doc.add_table(rows=2, cols=len(selected_cols))

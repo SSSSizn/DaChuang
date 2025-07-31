@@ -34,7 +34,7 @@ os.makedirs(output_dir, exist_ok=True)
 # 遍历网格分组
 for grid_name, group_df in df_raw.groupby(('网格名称', '')):
     doc = Document()
-    doc.add_heading(f'{grid_name} “十五五”配电网建设改造电缆线统计表', level=1)
+    doc.add_heading(f'表18  {grid_name} “十五五”配电网配电线路建设规模', level=1)
 
     # 创建双行表头表格，先创建2行7列，数据行后续添加
     table = doc.add_table(rows=2, cols=7)

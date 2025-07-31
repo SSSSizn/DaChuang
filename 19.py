@@ -58,6 +58,8 @@ df = df.drop(columns=[df.columns[0], df.columns[1]])
 # 按网格名称分组
 for grid_name, group_df in df.groupby(('网格名称', '')):
     doc = Document()
+    doc.add_heading(f'表19  {grid_name}配变及开关设备建设规模', level=1)
+
     table = doc.add_table(rows=2, cols=7)
     table.style = 'Table Grid'
 

@@ -30,7 +30,7 @@ for grid_name, group in groups:
     style.font.name = '宋体'
     style._element.rPr.rFonts.set(qn('w:eastAsia'), '宋体')
 
-    doc.add_heading(f"{grid_name} 变电站规划情况", level=1)
+    doc.add_heading(f"表5 {grid_name} “十五五”110kV 变电站规划建设情况  单位：座、台、 MVA", level=1)
 
     cols = 3 + len(years)
     # 只创建1行表头

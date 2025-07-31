@@ -35,7 +35,7 @@ for grid_name, group in groups:
     style.font.name = '宋体'
     style._element.rPr.rFonts.set(qn('w:eastAsia'), '宋体')
 
-    doc.add_heading(grid_name, level=1)
+    doc.add_heading(f"表6  {grid_name}全社会用电量预测表 单位：亿 kWh，%", level=1)
 
     # 取该网格的第一行数据（一般每个网格一条）
     row = group.iloc[0]

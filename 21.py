@@ -44,7 +44,7 @@ for idx, row in df.iterrows():
 
     # 创建 Word 文档
     doc = Document()
-    doc.add_heading(f"{grid_name} 投资项目汇总表", level=1)
+    doc.add_heading(f"表21  {grid_name} 网格投资情况", level=1)
 
     table = doc.add_table(rows=1, cols=6)
     table.style = 'Table Grid'
